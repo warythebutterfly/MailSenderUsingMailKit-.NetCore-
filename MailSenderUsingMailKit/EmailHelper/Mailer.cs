@@ -39,11 +39,11 @@ namespace MailSenderUsingMailKit.EmailHelper
         {
             try
             {
-                //from address is your email address in appsettings
-                string fromAddress = _yourEmailAddresss;
+                //from address is your email address
+                string fromAddress = "_yourEmailAddresss";
 
                 //from addres address title id your name
-                string fromAddressTitle = _yourName;
+                string fromAddressTitle = "_yourName";
 
                 //to address is the reciepient email
                 string ToAddress = email;
@@ -68,7 +68,7 @@ namespace MailSenderUsingMailKit.EmailHelper
                         emailClient.SslProtocols |= SslProtocols.Tls;
                         emailClient.CheckCertificateRevocation = false;
                         await emailClient.ConnectAsync("smtp.gmail.com", 465, true);
-                        await emailClient.AuthenticateAsync(_yourEmailAddresss, _yourEmailPassword);
+                        await emailClient.AuthenticateAsync("_yourEmailAddresss", "_yourEmailPassword");
                     }
                     catch (Exception)
                     {

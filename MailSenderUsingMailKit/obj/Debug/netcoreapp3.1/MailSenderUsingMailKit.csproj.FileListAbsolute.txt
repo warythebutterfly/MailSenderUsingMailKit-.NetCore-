@@ -17,3 +17,13 @@ C:\Users\temit\source\repos\MailSenderUsingMailKit\MailSenderUsingMailKit\obj\De
 C:\Users\temit\source\repos\MailSenderUsingMailKit\MailSenderUsingMailKit\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
 C:\Users\temit\source\repos\MailSenderUsingMailKit\MailSenderUsingMailKit\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
 C:\Users\temit\source\repos\MailSenderUsingMailKit\MailSenderUsingMailKit\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\temit\source\repos\MailSenderUsingMailKit\MailSenderUsingMailKit\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\temit\source\repos\MailSenderUsingMailKit\MailSenderUsingMailKit\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\temit\source\repos\MailSenderUsingMailKit\MailSenderUsingMailKit\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\temit\source\repos\MailSenderUsingMailKit\MailSenderUsingMailKit\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Json.dll
+C:\Users\temit\source\repos\MailSenderUsingMailKit\MailSenderUsingMailKit\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\temit\source\repos\MailSenderUsingMailKit\MailSenderUsingMailKit\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Users\temit\source\repos\MailSenderUsingMailKit\MailSenderUsingMailKit\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Users\temit\source\repos\MailSenderUsingMailKit\MailSenderUsingMailKit\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.EnvironmentVariables.dll
+C:\Users\temit\source\repos\MailSenderUsingMailKit\MailSenderUsingMailKit\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.CommandLine.dll
+C:\Users\temit\source\repos\MailSenderUsingMailKit\MailSenderUsingMailKit\obj\Debug\netcoreapp3.1\MailSenderUsingMailKit.csproj.CoreCompileInputs.cache
