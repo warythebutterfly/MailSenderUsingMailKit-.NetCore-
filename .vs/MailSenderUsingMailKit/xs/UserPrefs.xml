@@ -1,0 +1,30 @@
+﻿<Properties StartupConfiguration="{96EBFE8A-B016-4FCE-B40D-358C0DA66EFB}|Default">
+  <MonoDevelop.Ide.ItemProperties.MailSenderUsingMailKit PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="MailSenderUsingMailKit/EmailHelper/Settings.cs">
+    <Files>
+      <File FileName="MailSenderUsingMailKit/appsettings.json" Line="2" Column="24" />
+      <File FileName="MailSenderUsingMailKit/Program.cs" />
+      <File FileName="MailSenderUsingMailKit/EmailHelper/Mailer.cs" />
+      <File FileName="MailSenderUsingMailKit/EmailHelper/Settings.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="MailSenderUsingMailKit" expanded="True">
+            <Node name="MailSenderUsingMailKit" expanded="True">
+              <Node name="EmailHelper" expanded="True">
+                <Node name="Settings.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

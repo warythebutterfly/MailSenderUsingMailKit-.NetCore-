@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using MailSenderUsingMailKit.EmailHelper;
+using Microsoft.Extensions.Configuration;
 using System;
 
 namespace MailSenderUsingMailKit
@@ -8,24 +9,26 @@ namespace MailSenderUsingMailKit
         static void Main(string[] args)
         {
 
-            //var environmentName = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT");
+            // pull in the environment variable configuration
+            var environmentConfiguration = new ConfigurationBuilder()
+                .AddEnvironmentVariables()
+                .Build();
+            var environment = environmentConfiguration["RUNTIME_ENVIRONMENT"];
+
+            // load the app settings into configuration
+            var configuration = new ConfigurationBuilder()
+                .AddJsonFile($"appsettings.json", false, true)
+                .AddJsonFile($"appsettings.{environment}.json", true, true)
+                .AddEnvironmentVariables()
+                .Build();
+
+            // parse all settings into the Settings class structure
+            var settings = configuration.Get<Settings>();
+
+            //retrieve any of your keys like this
+            Console.WriteLine(settings.AppSettings.FirstSetting);
 
 
-            //IConfiguration Configuration = new ConfigurationBuilder()
-            //        .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
-            //        .AddEnvironmentVariables()
-            //        .AddCommandLine(args)
-            //        .Build();
-            ////var builder = new ConfigurationBuilder()
-            ////    .AddJsonFile($"appsettings.json", true, true)
-            ////    .AddJsonFile($"appsettings.{environmentName}.json", true, true)
-            ////    .AddEnvironmentVariables();
-            ////var configuration = builder.Build();
-            ////var myConnString = configuration.GetConnectionString("EmailAddress");
-
-            //var section = Configuration.GetSection("EmailAddress");
-            ////var section1 = configuration.GetValue("Onesetting");
-            //Console.WriteLine(section);
             Console.WriteLine("Mail Sender Using MailKit!");
 
             EmailHelper.Mailer testMail = new EmailHelper.Mailer();
