@@ -23,28 +23,43 @@ namespace MailSenderUsingMailKit.EmailHelper
         {
           
             _config = configuration;
-            _yourEmailAddresss = _config.GetConnectionString("EmailAddress");
-            _yourName = _config.GetConnectionString("SenderName");
-            _yourEmailPassword = _config.GetConnectionString("EmailPassword");
+           
 
         }
 
 
 
-        private string _yourEmailAddresss;
-        private string _yourName;
-        private string _yourEmailPassword;
-
         public async Task<string> sendTestMail(string email, string subject, string message)
         {
             try
             {
-                //from address is your email address
-                string fromAddress = "_yourEmailAddresss";
+                
+                    // pull in the environment variable configuration
+                    var environmentConfiguration = new ConfigurationBuilder()
+                        .AddEnvironmentVariables()
+                        .Build();
+                    var environment = environmentConfiguration["RUNTIME_ENVIRONMENT"];
 
-                //from addres address title id your name
-                string fromAddressTitle = "_yourName";
+                    // load the app settings into configuration
+                    var configuration = new ConfigurationBuilder()
+                        .AddJsonFile($"appsettings.json", false, true)
+                        .AddJsonFile($"appsettings.{environment}.json", true, true)
+                        .AddEnvironmentVariables()
+                        .Build();
+                    var settings = configuration.Get<Settings>();
 
+                    var emailPassword = settings.AppSettings.EmailPassword;
+
+                    //from address is your email address
+                    string emailAddress = settings.AppSettings.EmailAddress;
+
+                    //from address title is your name
+                    string senderName = settings.AppSettings.SenderName;
+                    if (emailAddress == null || emailPassword == null || senderName == null)
+                    {
+                        return "could not get environment variables from appsettings";
+                    }
+               
                 //to address is the reciepient email
                 string ToAddress = email;
 
@@ -53,7 +68,7 @@ namespace MailSenderUsingMailKit.EmailHelper
                 string body = message;
 
                 var mimeMessage = new MimeMessage();
-                mimeMessage.From.Add(new MailboxAddress(fromAddressTitle, fromAddress));
+                mimeMessage.From.Add(new MailboxAddress(senderName, emailAddress));
                 mimeMessage.To.Add(new MailboxAddress(ToAddress));
                 mimeMessage.Subject = Subject;
                 mimeMessage.Body = new TextPart("html")
@@ -68,7 +83,7 @@ namespace MailSenderUsingMailKit.EmailHelper
                         emailClient.SslProtocols |= SslProtocols.Tls;
                         emailClient.CheckCertificateRevocation = false;
                         await emailClient.ConnectAsync("smtp.gmail.com", 465, true);
-                        await emailClient.AuthenticateAsync("_yourEmailAddresss", "_yourEmailPassword");
+                        await emailClient.AuthenticateAsync(emailAddress, emailPassword);
                     }
                     catch (Exception)
                     {

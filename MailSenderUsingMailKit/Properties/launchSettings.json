@@ -4,9 +4,6 @@
       "commandName": "Project",
       "environmentVariables": {
         "Key": "Value",
-        "_yourEmailAddress": "temitoyosi@gmail.com",
-        "_yourEmailPassword": "isoyot777",
-        "_yourName": "Temitoyosi",
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     }

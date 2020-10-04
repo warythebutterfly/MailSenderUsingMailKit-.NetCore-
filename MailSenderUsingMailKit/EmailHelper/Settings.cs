@@ -55,6 +55,9 @@ namespace MailSenderUsingMailKit.EmailHelper
 
     public class AppSettings
     {
-        public string FirstSetting { get; set; }
+        //public string FirstSetting { get; set; }
+        public string SenderName { get; set; }
+        public string EmailAddress { get; set; }
+        public string EmailPassword { get; set; }
     }
 }

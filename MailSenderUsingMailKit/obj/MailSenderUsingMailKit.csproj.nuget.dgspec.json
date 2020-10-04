@@ -1,23 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "/Users/mikolo/Public/repos/test_projects/MailSenderUsingMailKit-.NetCore-/MailSenderUsingMailKit/MailSenderUsingMailKit.csproj": {}
+    "C:\\Users\\temit\\source\\repos\\MailSenderUsingMailKit\\MailSenderUsingMailKit\\MailSenderUsingMailKit.csproj": {}
   },
   "projects": {
-    "/Users/mikolo/Public/repos/test_projects/MailSenderUsingMailKit-.NetCore-/MailSenderUsingMailKit/MailSenderUsingMailKit.csproj": {
+    "C:\\Users\\temit\\source\\repos\\MailSenderUsingMailKit\\MailSenderUsingMailKit\\MailSenderUsingMailKit.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/mikolo/Public/repos/test_projects/MailSenderUsingMailKit-.NetCore-/MailSenderUsingMailKit/MailSenderUsingMailKit.csproj",
+        "projectUniqueName": "C:\\Users\\temit\\source\\repos\\MailSenderUsingMailKit\\MailSenderUsingMailKit\\MailSenderUsingMailKit.csproj",
         "projectName": "MailSenderUsingMailKit",
-        "projectPath": "/Users/mikolo/Public/repos/test_projects/MailSenderUsingMailKit-.NetCore-/MailSenderUsingMailKit/MailSenderUsingMailKit.csproj",
-        "packagesPath": "/Users/mikolo/.nuget/packages/",
-        "outputPath": "/Users/mikolo/Public/repos/test_projects/MailSenderUsingMailKit-.NetCore-/MailSenderUsingMailKit/obj/",
+        "projectPath": "C:\\Users\\temit\\source\\repos\\MailSenderUsingMailKit\\MailSenderUsingMailKit\\MailSenderUsingMailKit.csproj",
+        "packagesPath": "C:\\Users\\temit\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\temit\\source\\repos\\MailSenderUsingMailKit\\MailSenderUsingMailKit\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files (x86)\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "/Users/mikolo/.config/NuGet/NuGet.Config"
+          "C:\\Users\\temit\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -83,7 +86,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.302/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files (x86)\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
         }
       }
     }
